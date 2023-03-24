@@ -4,13 +4,20 @@ import re
 from PIL import Image
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-hide_ststyle = """
-            <style>
-            MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
+# hide_ststyle = """
+#             <style>
+#             MainMenu {visibility: hidden;}
+#             footer {visibility: hidden;}
+#             header {visibility: hidden;}
+#             </style>
+#             """
+hide_streamlit_style = """
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 c1,c2,c3=st.columns([1,1,1])
 page_bg="""
 <style>
