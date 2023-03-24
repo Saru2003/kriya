@@ -11,6 +11,28 @@ sheet = client.open("kriya").sheet1
 # data = sheet.get_all_records()
 st.set_page_config(page_title="Digital Challan",layout="wide")
 l=[]
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+page_bg="""
+<style>
+[data-testid="stAppViewContainer"]{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/303/229/316/photo-of-man-in-motorcycle-suit-riding-on-red-and-white-sport-bike-wallpaper-preview.jpg");
+    background-size: cover;
+}
+[data-testid="stHeader"]{
+    background-color: rgba(0,0,0,0);
+}
+</style>
+"""
+# with c2:
+st.markdown(page_bg,unsafe_allow_html=True)
+
 c1,c2,c3=st.columns([0.2,1.2,1])
 with c2:
     cell = sheet.cell(1,1).value
