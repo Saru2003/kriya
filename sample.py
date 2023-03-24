@@ -11,13 +11,14 @@ from oauth2client.service_account import ServiceAccountCredentials
 #             header {visibility: hidden;}
 #             </style>
 #             """
-st.markdown('''
-<style>
-.stApp [data-testid="stToolbar"]{
-    display:none;
-}
-</style>
-''', unsafe_allow_html=True)
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 c1,c2,c3=st.columns([1,1,1])
 page_bg="""
 <style>
