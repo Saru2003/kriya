@@ -69,6 +69,7 @@ with c3:
                         sheet.update_cell(i+1,11,"WD")
                         # name,type,id,to
                         mail(data[i][2],"withdrawal",id,data[i][7])
+                        st.write(f'''<h6 style="margin-left:135px"> A mail with details has been sent to you. </h6>''',unsafe_allow_html=True)
                         break                
                 
     if t==2:
@@ -91,6 +92,7 @@ with c3:
                 sheet.update_cell(i+1,10,id)
                 sheet.update_cell(i+1,11,"DEP")
                 mail(data[i][2],"deposition",id,data[i][7])
+                st.write(f'''<h6 style="margin-left:135px"> A mail with details has been sent to you. </h6>''',unsafe_allow_html=True)
                 # break
 
         # if amt<l[6]:
