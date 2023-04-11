@@ -83,7 +83,7 @@ with c2:
     #    <h1>OTHERS..</h1>
     # </div>
 	# ''',unsafe_allow_html=True)
-	st.write('''<h3 style="font-family:georgia,garamond,serif;font-size:90px;margin-top:100px"><span style="color: white">Kriya Bank</span></h3>''',unsafe_allow_html=True)
+	st.write('''<h3 style="font-family:georgia,garamond,serif;font-size:90px;margin-top:100px"><span style="color: white">PSG Bank</span></h3>''',unsafe_allow_html=True)
 	st.write('''<h6 style="font-family:georgia,garamond,serif;font-size:30px"><span style="color: white">For the welfare of people.</span></h6>''',unsafe_allow_html=True)
 with c3:
 	# st.write('''<h5 style="font-family: Helvetica; font-size: 40px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;"><span style="color: black">Username</span></h1>''',unsafe_allow_html=True)
